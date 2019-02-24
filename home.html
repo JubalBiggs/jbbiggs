@@ -426,75 +426,77 @@
                     <app-blog-body _ngcontent-c0="" class="w-100" _nghost-c3="">
                         <div _ngcontent-c3="">
 
-                            <div _ngcontent-c0="" class="row">
-                                <app-author-profile _ngcontent-c0="" class="w-100" _nghost-c4="">
-                                    <mat-divider _ngcontent-c4="" class="mat-divider mat-divider-horizontal" role="separator"
-                                                 aria-orientation="horizontal"></mat-divider>
-                                    <div class="container section-buffer">
-                                        <div class="row text-center">
-                                            <h3 _ngcontent-c4="" class="w-100">CONTACT US !!</h3>
-                                        </div>
-                                        <div class="row section-buffer">
-                                            <div class="col-md-6 text-center">
+                            <!--<div _ngcontent-c0="" class="row">-->
+                                <!--<app-author-profile _ngcontent-c0="" class="w-100" _nghost-c4="">-->
+                                    <!--<mat-divider _ngcontent-c4="" class="mat-divider mat-divider-horizontal" role="separator"-->
+                                                 <!--aria-orientation="horizontal"></mat-divider>-->
+                                    <!--<div class="container section-buffer">-->
+                                        <!--<div class="row text-center">-->
+                                            <!--<h3 _ngcontent-c4="" class="w-100">CONTACT US !!</h3>-->
+                                        <!--</div>-->
 
-                                                <form action="https://postmail.invotes.com/send"
-                                                    method="post" id="email_form">
+                                        <!--<div class="row section-buffer">-->
+                                            <!--<div class="col-md-6 text-center">-->
 
-                                                    <input size="50" type="text" name="reply_to" placeholder="Your Email" />
-                                                    <br>
-                                                    <input size="50" type="text" name="subject" placeholder="Subject" />
-                                                    <br>
-                                                    <textarea rows="4" cols="50" name="text" placeholder="Message"></textarea>
-                                                    <br>
+                                                <!--<form action="https://postmail.invotes.com/send"-->
+                                                    <!--method="post" id="email_form">-->
 
-                                                    <input type="hidden" name="access_token" value="cna0y0ye4ispdpbo0rdtvdzk" />
-                                                      <!-- return urls can be fully qualified -OR-
-                                                         start with / for root relative -OR-
-                                                         start with . for url relative -->
-                                                    <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
-                                                    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+                                                    <!--<input size="50" type="text" name="reply_to" placeholder="Your Email" />-->
+                                                    <!--<br>-->
+                                                    <!--<input size="50" type="text" name="subject" placeholder="Subject" />-->
+                                                    <!--<br>-->
+                                                    <!--<textarea rows="4" cols="50" name="text" placeholder="Message"></textarea>-->
+                                                    <!--<br>-->
 
-
-
-                                                    <!-- to append extra fields, use the extra_ prefix.
-                                                        Entries will be appended to your message body. -->
-                                                    <!-- <input type="text" name="extra_phone_number"
-                                                                placeholder="Phone Number" /> -->
-
-                                                    <!-- to split your message into 160 chars
-                                                         for an sms gateway -->
-                                                    <!-- <input type="hidden"
-                                                                name="sms_format" value="true" /> -->
-
-                                                    <input id="submit_form" type="submit" value="Send" />
-                                                    <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
-                                                    <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
-                                                </form>
-                                                <!-- optional, prevents the submit button from being pressed more than once -->
-                                                <script>
-                                                    var submitButton = document.getElementById("submit_form");
-                                                    var form = document.getElementById("email_form");
-                                                    form.addEventListener("submit", function (e) {
-                                                        setTimeout(function() {
-                                                            submitButton.value = "Sending...";
-                                                            submitButton.disabled = true;
-                                                        }, 1);
-                                                    });
-                                                </script>
+                                                    <!--<input type="hidden" name="access_token" value="cna0y0ye4ispdpbo0rdtvdzk" />-->
+                                                      <!--&lt;!&ndash; return urls can be fully qualified -OR- -->
+                                                         <!--start with / for root relative -OR- -->
+                                                         <!--start with . for url relative &ndash;&gt;-->
+                                                    <!--<input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />-->
+                                                    <!--<input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />-->
 
 
-                                            </div>
-                                            <div  style="text-align:center" class="col-md-6 vertical-center text-format align-top align-text-top">
-                                                <p>
-                                                    <a target="_blank" href="https://www.facebook.com/ChildOfWrathBook/?ref=bookmarks"><img src="./assets/facebook.png"></a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <mat-divider _ngcontent-c4="" class="mat-divider mat-divider-horizontal" role="separator"
-                                                 aria-orientation="horizontal"></mat-divider>
-                                </app-author-profile>
-                            </div>
+
+                                                    <!--&lt;!&ndash; to append extra fields, use the extra_ prefix.-->
+                                                        <!--Entries will be appended to your message body. &ndash;&gt;-->
+                                                    <!--&lt;!&ndash; <input type="text" name="extra_phone_number"-->
+                                                                <!--placeholder="Phone Number" /> &ndash;&gt;-->
+
+                                                    <!--&lt;!&ndash; to split your message into 160 chars-->
+                                                         <!--for an sms gateway &ndash;&gt;-->
+                                                    <!--&lt;!&ndash; <input type="hidden"-->
+                                                                <!--name="sms_format" value="true" /> &ndash;&gt;-->
+
+                                                    <!--<input id="submit_form" type="submit" value="Send" />-->
+                                                    <!--&lt;!&ndash; not required, but we'd appreciate it if you'd link to us somewhere on your site &ndash;&gt;-->
+                                                    <!--<p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>-->
+                                                <!--</form>-->
+                                                <!--&lt;!&ndash; optional, prevents the submit button from being pressed more than once &ndash;&gt;-->
+                                                <!--<script>-->
+                                                    <!--var submitButton = document.getElementById("submit_form");-->
+                                                    <!--var form = document.getElementById("email_form");-->
+                                                    <!--form.addEventListener("submit", function (e) {-->
+                                                        <!--setTimeout(function() {-->
+                                                            <!--submitButton.value = "Sending...";-->
+                                                            <!--submitButton.disabled = true;-->
+                                                        <!--}, 1);-->
+                                                    <!--});-->
+                                                <!--</script>-->
+
+
+                                            <!--</div>-->
+                                            <!--<div  style="text-align:center" class="col-md-6 vertical-center text-format align-top align-text-top">-->
+                                                <!--<p>-->
+                                                    <!--<a target="_blank" href="https://www.facebook.com/ChildOfWrathBook/?ref=bookmarks"><img src="./assets/facebook.png"></a>-->
+                                                <!--</p>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+
+                                    <!--</div>-->
+                                    <!--<mat-divider _ngcontent-c4="" class="mat-divider mat-divider-horizontal" role="separator"-->
+                                                 <!--aria-orientation="horizontal"></mat-divider>-->
+                                <!--</app-author-profile>-->
+                            <!--</div>-->
 
 
 
@@ -634,6 +636,75 @@
             <div _ngcontent-c0="" class="col-md-4">
                 <app-sticky _ngcontent-c0="" _nghost-c5="">
                     <div _ngcontent-c5="" class="sticky text-right">
+
+                                    <div class="container section-buffer">
+                                        <div class="row text-center">
+                                            <h3 _ngcontent-c4="" class="w-100">CONTACT US !!</h3>
+                                        </div>
+
+                                        <div class="row section-buffer">
+                                            <div class="col-md-12 text-center">
+
+                                                <form action="https://postmail.invotes.com/send"
+                                                    method="post" id="email_form">
+
+                                                    <input size="50" type="text" name="reply_to" placeholder="Your Email" />
+                                                    <br>
+                                                    <input size="50" type="text" name="subject" placeholder="Subject" />
+                                                    <br>
+                                                    <textarea rows="4" cols="50" name="text" placeholder="Message"></textarea>
+                                                    <br>
+
+                                                    <input type="hidden" name="access_token" value="cna0y0ye4ispdpbo0rdtvdzk" />
+                                                      <!-- return urls can be fully qualified -OR-
+                                                         start with / for root relative -OR-
+                                                         start with . for url relative -->
+                                                    <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                                                    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+
+
+
+                                                    <!-- to append extra fields, use the extra_ prefix.
+                                                        Entries will be appended to your message body. -->
+                                                    <!-- <input type="text" name="extra_phone_number"
+                                                                placeholder="Phone Number" /> -->
+
+                                                    <!-- to split your message into 160 chars
+                                                         for an sms gateway -->
+                                                    <!-- <input type="hidden"
+                                                                name="sms_format" value="true" /> -->
+
+                                                    <input id="submit_form" type="submit" value="Send" />
+                                                    <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+                                                    <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
+                                                </form>
+                                                <!-- optional, prevents the submit button from being pressed more than once -->
+                                                <script>
+                                                    var submitButton = document.getElementById("submit_form");
+                                                    var form = document.getElementById("email_form");
+                                                    form.addEventListener("submit", function (e) {
+                                                        setTimeout(function() {
+                                                            submitButton.value = "Sending...";
+                                                            submitButton.disabled = true;
+                                                        }, 1);
+                                                    });
+                                                </script>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="row section-buffer">
+                                            <div  style="text-align:center" class="col-md-12 vertical-center text-format align-top align-text-top">
+                                                <p>
+                                                    <a target="_blank" href="https://www.facebook.com/ChildOfWrathBook/?ref=bookmarks"><img src="./assets/facebook.png"></a>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
                         <app-countdown _ngcontent-c5="" _nghost-c12="">
                             <div _ngcontent-c12="" class="wrap">
                                 <div _ngcontent-c12="" class="time-to"><span _ngcontent-c12="">Buy Now From These Retailers!</span>
